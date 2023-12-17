@@ -7,7 +7,7 @@ app.use((ctx) => {
   ctx.response.body = "Hello World!";
 });
 
-app.use(async (_ctx, next) => {
+app.use(async (ctx, next) => {
   console.log('Middleware!');
   await next();
 });
