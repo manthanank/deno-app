@@ -8,7 +8,6 @@ app.use((ctx) => {
 });
 
 app.use(async (ctx, next) => {
-  ctx.response.body = "Hello Middleware!";
   console.log('Middleware!');
   await next();
 });
